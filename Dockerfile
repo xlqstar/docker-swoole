@@ -1,5 +1,4 @@
 FROM php:latest
-    && pecl install memcached \
 
 RUN mkdir -p /var/script
 
