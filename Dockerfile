@@ -1,4 +1,4 @@
-FROM php:latest
+FROM php:5.6-cli
 
 RUN mkdir -p /var/script
 
