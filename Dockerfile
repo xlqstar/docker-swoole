@@ -2,7 +2,7 @@ FROM php:5.6-cli
 
 RUN mkdir -p /var/script
 
-RUN apt-get update && apt-get install libpcre3 libpcre3-dev openssl libssl-dev \
+RUN apt-get update && apt-get install -y libpcre3 libpcre3-dev openssl libssl-dev \
     && pecl install swoole \
     && docker-php-ext-enable swoole \
 
